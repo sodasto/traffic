@@ -24,10 +24,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="About Me"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/abc_search_url_text_normal" />
+        android:textColor="@color/abc_search_url_text_normal"
+        android:onClick="clickAboutMe" />
 
     <ListView
         android:layout_width="wrap_content"
