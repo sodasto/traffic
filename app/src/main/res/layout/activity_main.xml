@@ -7,17 +7,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.administrator.mytriffic.MainActivity">
+    tools:context="com.example.administrator.mytriffic.MainActivity"
+    android:background="@drawable/bg10">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Am kwandao"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView" />
+        android:text="@string/title_main"
+        android:id="@+id/textView"
+        android:textSize="@dimen/h1"
+        android:textColor="@color/text"
+        android:textStyle="bold|italic"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/abc_search_url_text_normal" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#82ffffff" />
 </RelativeLayout>
