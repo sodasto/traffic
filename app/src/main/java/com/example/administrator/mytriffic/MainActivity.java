@@ -8,6 +8,7 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.security.PrivateKey;
@@ -65,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(this, iconInts, titleStrings, detailShot);
         listView.setAdapter(myAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
     }//Main Method
 
